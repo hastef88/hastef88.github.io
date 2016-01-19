@@ -13,7 +13,7 @@ While article [3] provides information on how to publish asynchronously to a JMS
 
 ### Pre-requisites : 
 
-1. Copy the following jar files from the <MB_HOME>/clent-lib folder to the <ESB_HOME>/repository/components/lib folder. 
+* Copy the following jar files from the <MB_HOME>/clent-lib folder to the <ESB_HOME>/repository/components/lib folder. 
 
 * andes-client-3.0.1.jar  
 * geronimo-jms_1.1_spec-1.1.0.wso2v1.jar  
@@ -22,7 +22,7 @@ While article [3] provides information on how to publish asynchronously to a JMS
 * org.wso2.securevault-1.0.0-wso2v2.jar  
 * slf4j-1.5.10.wso2v1.jar
 
-2. Add the connection factories at <ESB_HOME>/repository/conf/jndi.properties file : 
+* Add the connection factories at <ESB_HOME>/repository/conf/jndi.properties file : 
 
 ```
 connectionfactory.QueueConnectionFactory = amqp://admin:admin@clientID/test?brokerlist='tcp://localhost:5672'
@@ -37,15 +37,15 @@ topic.MytopicB = MyTopicB
 ```
 
 
-3. This sample uses the callout mediator to invoke the synchronized call. Therefore, to enable JMS transport for the callout mediator, enable the following propery in <ESB_HOME>/repository/conf/axis2/axis2_blocking_client.xml file.
+* This sample uses the callout mediator to invoke the synchronized call. Therefore, to enable JMS transport for the callout mediator, enable the following propery in <ESB_HOME>/repository/conf/axis2/axis2_blocking_client.xml file.
 
 ```xml
 <transportSender name="jms" class="org.apache.axis2.transport.jms.JMSSender"/>
 ```
 
-4. Create a default endpoint with name "defaultEndpoint" from the ESB management console as per article [4].
+* Create a default endpoint with name "defaultEndpoint" from the ESB management console as per article [4].
 
-5. Create a custom proxy and use the proxy configuration in below "Sample Proxy" section.
+* Create a custom proxy and use the proxy configuration in below "Sample Proxy" section.
 
 ### Sample Request : 
 
