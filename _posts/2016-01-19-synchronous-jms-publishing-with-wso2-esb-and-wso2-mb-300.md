@@ -13,7 +13,7 @@ While article [3] provides information on how to publish asynchronously to a JMS
 
 ### Pre-requisites : 
 
-Copy the following jar files from the <MB_HOME>/clent-lib folder to the <ESB_HOME>/repository/components/lib folder. 
+1. Copy the following jar files from the <MB_HOME>/clent-lib folder to the <ESB_HOME>/repository/components/lib folder. 
 
 * andes-client-3.0.1.jar  
 * geronimo-jms_1.1_spec-1.1.0.wso2v1.jar  
@@ -22,7 +22,7 @@ Copy the following jar files from the <MB_HOME>/clent-lib folder to the <ESB_HOM
 * org.wso2.securevault-1.0.0-wso2v2.jar  
 * slf4j-1.5.10.wso2v1.jar
 
-Add the connection factories at <ESB_HOME>/repository/conf/jndi.properties file : 
+2. Add the connection factories at <ESB_HOME>/repository/conf/jndi.properties file : 
 
 ```
 connectionfactory.QueueConnectionFactory = amqp://admin:admin@clientID/test?brokerlist='tcp://localhost:5672'
@@ -37,11 +37,15 @@ topic.MytopicB = MyTopicB
 ```
 
 
-This sample uses the callout mediator to invoke the synchronized call. Therefore, to enable JMS transport for the callout mediator, enable the following propery in <ESB_HOME>/repository/conf/axis2/axis2_blocking_client.xml file.
+3. This sample uses the callout mediator to invoke the synchronized call. Therefore, to enable JMS transport for the callout mediator, enable the following propery in <ESB_HOME>/repository/conf/axis2/axis2_blocking_client.xml file.
 
 ```xml
 <transportSender name="jms" class="org.apache.axis2.transport.jms.JMSSender"/>
 ```
+
+4. Create a default endpoint with name "defaultEndpoint" from the ESB management console as per article [4].
+
+5. Create a custom proxy and use the proxy configuration in below "Sample Proxy" section.
 
 ### Sample Request : 
 
@@ -63,7 +67,7 @@ Given the following request payload, the sample proxy will iterate through and p
  </soapenv:Envelope>
 {% endhighlight %}
 
-## Sample Proxy : 
+### Sample Proxy : 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -147,8 +151,8 @@ Given the following request payload, the sample proxy will iterate through and p
 4. The <loopback> mediator is used at the end of the inSequence to direct the flow to the outSequence following a successful invocation. 
 
 
+
 [1] : [http://wso2.com/products/message-broker/](http://wso2.com/products/message-broker/)
-
 [2] : [http://wso2.com/products/enterprise-service-bus/](http://wso2.com/products/enterprise-service-bus/)
-
 [3] : [https://docs.wso2.com/display/MB300/Integrating+WSO2+ESB](https://docs.wso2.com/display/MB300/Integrating+WSO2+ESB)
+[4] : [https://docs.wso2.com/display/ESB481/Default+Endpoint](https://docs.wso2.com/display/ESB481/Default+Endpoint)
