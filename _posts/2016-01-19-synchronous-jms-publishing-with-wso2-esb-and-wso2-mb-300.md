@@ -47,7 +47,7 @@ This sample uses the callout mediator to invoke the synchronized call. Therefore
 
 Given the following request payload, the sample proxy will iterate through and publish the full payload to each "xsd:symbol" topic under the "ser:request" section. (Publish to 2 topics MyTopicA and MyTopicB as per the below payload.)
 
-```xml
+{% highlight xml %}  
 <soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
     <soapenv:Header/>
     <soapenv:Body>
@@ -61,7 +61,7 @@ Given the following request payload, the sample proxy will iterate through and p
        </ser:getQuote>
     </soapenv:Body>
  </soapenv:Envelope>
-```
+{% endhighlight %}
 
 ## Sample Proxy : 
 
