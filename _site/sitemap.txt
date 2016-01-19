@@ -1,0 +1,14 @@
+
+http://hastef88.github.io/rss.xml
+http://hastef88.github.io/categories.html
+http://hastef88.github.io/archive.html
+http://hastef88.github.io/tags.html
+http://hastef88.github.io/index.html
+http://hastef88.github.io/sitemap.txt
+http://hastef88.github.io/pages.html
+http://hastef88.github.io/atom.xml
+
+http://hastef88.github.io/2016/01/19/synchronous-jms-publishing-with-wso2-esb-and-wso2-mb-300
+http://hastef88.github.io/2016/01/19/new-post
+http://hastef88.github.io/2016/01/19/mama-im-coming-home
+http://hastef88.github.io/lessons/2011/12/29/jekyll-introduction
