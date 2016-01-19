@@ -15,12 +15,12 @@ While article [3] provides information on how to publish asynchronously to a JMS
 
 * Copy the following jar files from the <MB_HOME>/clent-lib folder to the <ESB_HOME>/repository/components/lib folder. 
 
-* andes-client-3.0.1.jar  
-* geronimo-jms_1.1_spec-1.1.0.wso2v1.jar  
-* log4j-1.2.13.jar  
-* org.wso2.carbon.logging-4.4.1.jar  
-* org.wso2.securevault-1.0.0-wso2v2.jar  
-* slf4j-1.5.10.wso2v1.jar
+	* andes-client-3.0.1.jar  
+	* geronimo-jms_1.1_spec-1.1.0.wso2v1.jar  
+	* log4j-1.2.13.jar  
+	* org.wso2.carbon.logging-4.4.1.jar  
+	* org.wso2.securevault-1.0.0-wso2v2.jar  
+	* slf4j-1.5.10.wso2v1.jar
 
 * Add the connection factories at <ESB_HOME>/repository/conf/jndi.properties file : 
 
@@ -153,6 +153,9 @@ Given the following request payload, the sample proxy will iterate through and p
 
 
 [1] : [http://wso2.com/products/message-broker/](http://wso2.com/products/message-broker/)
+
 [2] : [http://wso2.com/products/enterprise-service-bus/](http://wso2.com/products/enterprise-service-bus/)
+
 [3] : [https://docs.wso2.com/display/MB300/Integrating+WSO2+ESB](https://docs.wso2.com/display/MB300/Integrating+WSO2+ESB)
+
 [4] : [https://docs.wso2.com/display/ESB481/Default+Endpoint](https://docs.wso2.com/display/ESB481/Default+Endpoint)
