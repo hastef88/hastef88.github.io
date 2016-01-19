@@ -148,7 +148,7 @@ Given the following request payload, the sample proxy will iterate through and p
 
 3. The default Endpoint is used within the callout mediator since the destination changes based on the topic name. 
 
-4. The <loopback> mediator is used at the end of the inSequence to direct the flow to the outSequence following a successful invocation. 
+4. The "loopback" mediator is used at the end of the inSequence to direct the flow to the outSequence following a successful invocation. 
 
 
 
