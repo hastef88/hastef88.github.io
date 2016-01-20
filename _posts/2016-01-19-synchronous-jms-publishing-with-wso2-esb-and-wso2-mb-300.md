@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Synchronous JMS publishing with WSO2 ESB and WSO2 MB 3.0.0"
+title: "Synchronous JMS publishing with WSO2 ESB 4.8.1 and WSO2 MB 3.0.0"
 description: ""
 category: 
 tags: []
