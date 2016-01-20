@@ -13,7 +13,7 @@ While article [3] provides information on how to publish asynchronously to a JMS
 
 ### Pre-requisites : 
 
-* Copy the following jar files from the MB__HOME/clent-lib folder to the ESB__HOME/repository/components/lib folder. 
+* Copy the following jar files from the MB~HOME/clent-lib folder to the ESB~HOME/repository/components/lib folder. 
 
 	* andes-client-3.0.1.jar  
 	* geronimo-jms_1.1_spec-1.1.0.wso2v1.jar  
